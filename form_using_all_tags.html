@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+
+<body>
+
+    <h2>Registration Form</h2>
+
+    <form>
+
+        
+        <label>Full Name:</label>
+        <input type="text" name="fullname" placeholder="Enter your name">
+        <br><br>
+
+        <!-- Email -->
+        <label>Email:</label>
+        <input type="email" name="email" placeholder="Enter your email">
+        <br><br>
+
+        <!-- Password -->
+        <label>Password:</label>
+        <input type="password" name="password" placeholder="Enter password">
+        <br><br>
+
+        <!-- Number -->
+        <label>Age:</label>
+        <input type="number" name="age" min="1" max="100">
+        <br><br>
+
+        <!-- Radio Button -->
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="other"> Other
+        <br><br>
+
+        <!-- Checkbox -->
+        <label>Skills:</label>
+        <input type="checkbox" name="skills" value="java"> Java
+        <input type="checkbox" name="skills" value="python"> Python
+        <input type="checkbox" name="skills" value="html"> HTML
+        <input type="checkbox" name="skills" value="css"> CSS
+        <br><br>
+
+        <!-- Dropdown -->
+        <label>City:</label>
+        <select name="city">
+            <option value="">Select City</option>
+            <option value="hyderabad">Hyderabad</option>
+            <option value="bangalore">Bangalore</option>
+            <option value="chennai">Chennai</option>
+            <option value="pune">Pune</option>
+        </select>
+        <br><br>
+
+        <!-- Date -->
+        <label>Date of Birth:</label>
+        <input type="date" name="dob">
+        <br><br>
+
+        <!-- File -->
+        <label>Upload Resume:</label>
+        <input type="file" name="resume">
+        <br><br>
+
+        <!-- Textarea -->
+        <label>Address:</label>
+        <br>
+        <textarea name="address" rows="5" cols="30"
+                  placeholder="Enter your address"></textarea>
+        <br><br>
+
+        <!-- Submit -->
+        <input type="submit" value="Register">
+
+        <!-- Reset -->
+        <input type="reset" value="Clear">
+
+    </form>
+
+</body>
+</html>
