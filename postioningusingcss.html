@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Position All Examples</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            height: 2000px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .box {
+            width: 150px;
+            height: 80px;
+            padding: 10px;
+            margin: 20px;
+            text-align: center;
+            font-weight: bold;
+            box-sizing: border-box;
+        }
+
+
+        /* 1. STATIC
+           Default position
+        */
+        .static {
+            position: static;
+            background-color: lightgray;
+        }
+
+
+        /* 2. RELATIVE
+           Moves from its original position
+        */
+        .relative {
+            position: relative;
+
+            top: 20px;
+            left: 50px;
+
+            background-color: lightgreen;
+        }
+
+
+        /* Parent for absolute element */
+        .parent {
+            width: 500px;
+            height: 250px;
+
+            margin: 50px 20px;
+
+            background-color: lightblue;
+
+            position: relative;
+        }
+
+
+        /* 3. ABSOLUTE
+           Positioned relative to .parent
+        */
+        .absolute {
+            position: absolute;
+
+            top: 20px;
+            right: 20px;
+
+            background-color: orange;
+        }
+
+
+        /* 4. FIXED
+           Fixed to browser window
+        */
+        .fixed {
+            position: fixed;
+
+            right: 20px;
+            bottom: 20px;
+
+            background-color: red;
+            color: white;
+
+            margin: 0;
+        }
+
+
+        /* 5. STICKY
+           Sticks when scrolling
+        */
+        .sticky {
+            position: sticky;
+
+            top: 0;
+
+            width: 100%;
+            height: 60px;
+
+            background-color: purple;
+            color: white;
+
+            text-align: center;
+            line-height: 60px;
+
+            font-weight: bold;
+
+            z-index: 10;
+        }
+
+
+        .content {
+            height: 1200px;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Position Examples</h1>
+
+
+    <!-- 1. STATIC -->
+
+    <h2>1. Static</h2>
+
+    <div class="box static">
+        Static
+    </div>
+
+
+    <!-- 2. RELATIVE -->
+
+    <h2>2. Relative</h2>
+
+    <div class="box relative">
+        Relative
+    </div>
+
+
+    <!-- 3. ABSOLUTE -->
+
+    <h2>3. Absolute</h2>
+
+    <div class="parent">
+
+        Parent
+        <br>
+        position: relative
+
+        <div class="box absolute">
+            Absolute
+        </div>
+
+    </div>
+
+
+    <!-- 5. STICKY -->
+
+    <h2>5. Sticky</h2>
+
+    <div class="sticky">
+        Sticky Navigation
+    </div>
+
+
+    <!-- CONTENT FOR SCROLLING -->
+
+    <div class="content">
+
+        <h2>Scroll Down</h2>
+
+        <p>
+            The sticky navigation will remain at the top
+            when you scroll.
+        </p>
+
+        <p>
+            The fixed box will always remain at the
+            bottom-right corner of the browser.
+        </p>
+
+        <br><br><br><br><br><br>
+
+        <h2>Keep Scrolling...</h2>
+
+        <br><br><br><br><br><br>
+
+        <h2>More Content</h2>
+
+        <br><br><br><br><br><br>
+
+        <h2>End of Page</h2>
+
+    </div>
+
+
+    <!-- 4. FIXED -->
+
+    <div class="box fixed">
+        Fixed
+    </div>
+
+
+</body>
+</html>
