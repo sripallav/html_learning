@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Laptop Price</title>
+
+```
+<style>
+    #box {
+        width: 300px;
+        height: 200px;
+        background-color: lightblue;
+        text-align: center;
+        padding: 20px;
+        margin: 100px auto;
+        border: 2px solid black;
+    }
+</style>
+```
+
+</head>
+
+<body>
+
+```
+<div id="box">
+    <h2>Phone</h2>
+
+    <p id="price">Price: ₹50,000</p>
+</div>
+
+<script>
+
+    let box = document.getElementById("box");
+    let price = document.getElementById("price");
+
+   
+    box.addEventListener("mouseenter", function() {
+
+        box.style.backgroundColor = "lightgreen";
+
+        price.innerHTML = "Price: ₹45,000";
+
+    });
+
+   
+    box.addEventListener("mouseleave", function() {
+
+        box.style.backgroundColor = "lightblue";
+
+        price.innerHTML = "Price: ₹50,000";
+
+    });
+
+</script>
+```
+
+</body>
+</html>
