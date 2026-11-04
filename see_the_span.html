@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding SPAN</title>
+</head>
+<body>
+
+    <h1>Why do we need &lt;span&gt;?</h1>
+    <hr>
+
+    <!-- CASE 1: MISTAKE - USING DIV INSIDE A SENTENCE -->
+    <h2>Case 1: The Mistake - Using &lt;div&gt; inside a sentence</h2>
+    <p>Chudu, sentence madyalo &lt;div&gt; pedithe line cut aypoyi new line loki velipoyindi:</p>
+
+    <p style="font-size: 18px; border: 1px solid gray; padding: 10px;">
+        Your order status is 
+        <div style="background-color: lightgreen; color: darkgreen; font-weight: bold; width: 120px;">
+            DELIVERED
+        </div>
+        Thank you for ordering with Swiggy!
+    </p>
+
+    <br><hr>
+
+    <!-- CASE 2: CORRECT - USING SPAN INSIDE A SENTENCE -->
+    <h2>Case 2: The Solution - Using &lt;span&gt; inside a sentence</h2>
+    <p>Ippudu chudu, &lt;span&gt; valla sentence line cut avvaledu, okate line lo neat ga undi:</p>
+
+    <p style="font-size: 18px; border: 1px solid gray; padding: 10px;">
+        Your order status is 
+        <span style="background-color: lightgreen; color: darkgreen; font-weight: bold; padding: 3px 8px; border-radius: 4px;">
+            DELIVERED
+        </span>.
+        Thank you for ordering with Swiggy!
+    </p>
+
+    <br><hr>
+
+    <!-- CASE 3: REAL-WORLD AMAZON PRICE EXAMPLE -->
+    <h2>Case 3: Amazon Product Price Example</h2>
+    <p style="font-size: 20px;">
+        Apple iPhone 15: 
+        <strong>₹69,999</strong> 
+        <span style="color: red; font-size: 14px; font-weight: bold;">(15% OFF)</span>
+        <span style="color: gray; font-size: 14px;">Inclusive of all taxes</span>
+    </p>
+
+</body>
+</html>
