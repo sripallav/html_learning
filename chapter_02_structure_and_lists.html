@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 2 - Block vs Inline & Lists</title>
+</head>
+<body>
+
+    <h1>Chapter 2: Structural Containers and Lists</h1>
+    <hr>
+
+    <!-- 1. BLOCK vs INLINE -->
+    <h2>1. Block vs Inline Elements</h2>
+    
+    <!-- Block element: Takes 100% width, starts on a new line -->
+    <div style="background-color: #d1e7dd; padding: 10px; margin-bottom: 10px;">
+        <strong>I am a &lt;div&gt; (Block):</strong> I take up the whole width from left to right!
+    </div>
+
+    <div style="background-color: #cfe2ff; padding: 10px; margin-bottom: 10px;">
+        <strong>I am another &lt;div&gt; (Block):</strong> I am forced to start on a new line because the div above took all the space.
+    </div>
+
+    <!-- Inline element: Takes only its text width, sits side-by-side -->
+    <p>
+        In this paragraph, the word 
+        <span style="background-color: #fff3cd; font-weight: bold; padding: 2px 6px;">&lt;span&gt; is inline</span>, 
+        so it stays inside the sentence without breaking to a new line!
+    </p>
+
+    <hr>
+
+    <!-- 2. UNORDERED LIST -->
+    <h2>2. Unordered List (&lt;ul&gt;)</h2>
+    <p>Used when the order of items does NOT matter (bullet points):</p>
+    <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <hr>
+
+    <!-- 3. ORDERED LIST AND ITS ATTRIBUTES -->
+    <h2>3. Ordered List (&lt;ol&gt;)</h2>
+    <p>Used when the order DOES matter (1, 2, 3...):</p>
+    <ol>
+        <li>Step 1: Write HTML</li>
+        <li>Step 2: Add CSS Styling</li>
+        <li>Step 3: Add JavaScript Logic</li>
+    </ol>
+
+    <h3>Special attributes for &lt;ol&gt;:</h3>
+    
+    <!-- Letters (A, B, C) using type="A" -->
+    <p>Using letters (type="A"):</p>
+    <ol type="A">
+        <li>Frontend Development</li>
+        <li>Backend Development</li>
+        <li>Database Management</li>
+    </ol>
+
+    <!-- Roman numerals (I, II, III) using type="I" -->
+    <p>Using Roman numerals (type="I"):</p>
+    <ol type="I">
+        <li>Phase One</li>
+        <li>Phase Two</li>
+        <li>Phase Three</li>
+    </ol>
+
+    <!-- Starting from a specific number -->
+    <p>Starting at number 10 (start="10"):</p>
+    <ol start="10">
+        <li>Item 10</li>
+        <li>Item 11</li>
+    </ol>
+
+    <hr>
+
+    <!-- 4. DESCRIPTION LIST (<dl>, <dt>, <dd>) -->
+    <h2>4. Description List (&lt;dl&gt;)</h2>
+    <p>Used for terms and their definitions (like a dictionary or FAQ):</p>
+    <dl>
+        <!-- <dt> = Description Term (the word) -->
+        <dt><strong>HTML</strong></dt>
+        <!-- <dd> = Description Details (the explanation) -->
+        <dd>HyperText Markup Language - defines the structure of web pages.</dd>
+
+        <dt><strong>CSS</strong></dt>
+        <dd>Cascading Style Sheets - defines the style and appearance of web pages.</dd>
+
+        <dt><strong>JavaScript</strong></dt>
+        <dd>Programming language that adds interactivity and logic to web pages.</dd>
+    </dl>
+
+</body>
+</html>
