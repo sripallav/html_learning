@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Studen Registration</title>
+</head>
+<body>
+    <h1 id="heading">Student Registration</h1>
+    <form id="studentForm">
+        <label>Name:</label>
+        <input type="text" id="name"><br></br>
+        <label>Course:</label>
+        <select id="course">
+            <option value="">Select Course</option>
+            <option value="Java">Java</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="React">React.js</option>
+        </select>
+    <br></br>
+        <button type="submit">Register</button>
+    </form>
+    <h2>Registered Students</h2>
+    <ul id="studentList"></ul>
+    <script>
+        let form= document.getElementById("studentForm");
+        let studentList=document.getElementById("studentList");
+        form.addEventListener("submit",function(event){
+            event.preventDefault();
+            let name=document.getElementById("name").value;
+            let course=document.getElementById("course").value;
+            if(name ===""||course ===""){
+                alert("please enter all deatils");
+                return;
+            }
+            let student=document.createElement("li");
+            student.textContent=name+"-"+course;
+            studentList.appendChild(student);
+            form.reset();
+        });
+    </script>
+    </form>
+</body>
+</html>

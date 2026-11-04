@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+
+/* TITLE */
+
+h1 {
+    text-align: center;
+    background-color: darkblue;
+    color: white;
+    width: 380px;
+    margin: auto;
+    font-size: 20px;
+    padding: 2px;
+}
+
+
+/* PRODUCTS */
+
+.products {
+    display: flex;
+    gap: 5px;
+    padding: 5px;
+}
+
+
+/* HERO */
+
+.hero {
+    width: 32%;
+    height: 95px;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: 95px;
+    object-fit: cover;
+}
+
+.hero p {
+    font-size: 8px;
+    margin: 2px;
+}
+
+
+/* PRODUCTS */
+
+.product {
+    width: 10%;
+    height: 95px;
+    background-color: #eeeeee;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: 70px;
+    object-fit: contain;
+}
+
+.product p {
+    margin: 2px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+
+/* BOTTOM */
+
+.bottom {
+    display: flex;
+    gap: 10px;
+    padding: 15px 5px 5px;
+}
+
+
+/* OFFER */
+
+.offer {
+    width: 43%;
+    height: 65px;
+    background-color: lightyellow;
+    display: flex;
+    gap: 20px;
+    padding: 5px;
+}
+
+
+/* SALE */
+
+.sale {
+    background-color: red;
+    color: white;
+    width: 70px;
+    height: 50px;
+    text-align: center;
+}
+
+.sale p {
+    margin: 2px;
+    font-size: 8px;
+}
+
+.sale h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+
+/* OFFER TEXT */
+
+.offer h2 {
+    margin: 0;
+    font-size: 13px;
+}
+
+.offer p {
+    margin: 3px;
+    font-size: 8px;
+}
+
+
+/* BUTTON */
+
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    font-size: 8px;
+}
+
+
+/* FOOTER */
+
+footer {
+    width: 55%;
+    height: 65px;
+    background-color: darkblue;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+footer div {
+    width: 23%;
+}
+
+footer h2 {
+    font-size: 14px;
+    margin: 3px;
+}
+
+footer h3 {
+    font-size: 10px;
+    margin: 3px;
+}
+
+footer p {
+    font-size: 7px;
+    margin: 3px;
+}
+
+
+/* LAST TEXT */
+
+.footer-image {
+    text-align: center;
+    font-size: 8px;
+}

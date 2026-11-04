@@ -1,0 +1,24 @@
+{
+  "name": "html-learning",
+  "version": "1.0.0",
+  "main": "add_twonums.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sripallav/html_learning.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sripallav/html_learning/issues"
+  },
+  "homepage": "https://github.com/sripallav/html_learning#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

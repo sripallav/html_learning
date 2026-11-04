@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+
+    Name:
+    <input type="text" id="a">
+
+    <br><br>
+
+    Designation:
+    <select id="desg">
+        <option value="Employee">Employee</option>
+        <option value="Manager">Manager</option>
+        <option value="Trainer">Trainer</option>
+    </select>
+
+    <br><br>
+
+    <button id="add">Add</button>
+
+    <h3>Employee</h3>
+    <ol id="employee"></ol>
+
+    <h3>Manager</h3>
+    <ol id="manager"></ol>
+
+    <h3>Trainer</h3>
+    <ol id="trainer"></ol>
+
+    <script>
+
+        let name = document.getElementById("a");
+        let desg = document.getElementById("desg");
+        let add = document.getElementById("add");
+
+        add.addEventListener("click", function() {
+
+            let names = document.createElement("li");
+            names.textContent = name.value;
+
+            if (desg.value == "Employee") {
+                document.getElementById("employee").appendChild(names);
+            }
+
+            else if (desg.value == "Manager") {
+                document.getElementById("manager").appendChild(names);
+            }
+
+            else if (desg.value == "Trainer") {
+                document.getElementById("trainer").appendChild(names);
+            }
+
+            name.value = "";
+        });
+
+    </script>
+
+</body>
+</html>

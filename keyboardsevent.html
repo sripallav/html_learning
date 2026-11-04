@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Keyboard Events</title>
+</head>
+
+<body>
+
+    <label>Username:</label>
+    <input type="text" id="uname">
+
+    <br><br>
+
+    <label>Type Something:</label>
+    <input type="text" id="myInput">
+
+    <script>
+
+        let uname = document.getElementById("uname");
+        let input = document.getElementById("myInput");
+
+        uname.addEventListener("keydown", function(event) {
+            console.log("Username Key DOWN: " + event.key);
+        });
+
+        uname.addEventListener("keyup", function(event) {
+            console.log("Username Key UP: " + event.key);
+        });
+
+        input.addEventListener("keydown", function(event) {
+            console.log(event.key + " DOWN");
+        });
+
+        input.addEventListener("keyup", function(event) {
+            console.log(event.key + " UP");
+        });
+
+    </script>
+
+</body>
+</html>
