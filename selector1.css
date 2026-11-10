@@ -1,0 +1,18 @@
+/* id selector using # */
+
+#brandtittle {
+    color:bisque;
+    background-color:aliceblue;
+    font-size:18px;
+}
+
+.sucess-btn {
+    background-color:aquamarine;
+    color:aliceblue;
+}
+
+.Danger-btn {
+    background-color:red;
+    color:white;
+}
+
