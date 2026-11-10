@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 4 - Semantic HTML5 Guide</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 20px;">
+
+    <!-- 1. HEADER: Top banner with site title & logo -->
+    <header style="background-color: #2b303a; color: white; padding: 15px; border-radius: 6px;">
+        <h1>DevChronicles</h1>
+        <p>A fresher's journey to mastering the MERN stack</p>
+    </header>
+
+    <br>
+
+    <!-- 2. NAV: Navigation bar -->
+    <nav style="background-color: #e9ecef; padding: 10px; border-radius: 6px;">
+        <ul style="list-style-type: none; margin: 0; padding: 0; display: flex; gap: 20px;">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Articles</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <br>
+
+    <!-- 3. MAIN: The central content container (Only ONE <main> per page) -->
+    <main style="display: flex; gap: 20px;">
+
+        <!-- 4. SECTION & ARTICLE: Primary content -->
+        <section style="flex: 3; background-color: #f8f9fa; padding: 15px; border-radius: 6px;">
+            
+            <article>
+                <h2>Why Semantic HTML Matters for Modern Developers</h2>
+                <small>Published on November 4, 2026 by Sri Pallav</small>
+                
+                <p>
+                    Semantic HTML tags give meaning to our web pages. Instead of filling our code with 
+                    endless &lt;div&gt; containers ("Div Soup"), we use purposeful tags like &lt;header&gt;, 
+                    &lt;article&gt;, and &lt;footer&gt;.
+                </p>
+
+                <!-- 5. FIGURE and FIGCAPTION: Image with a caption -->
+                <figure style="margin: 15px 0;">
+                    <img 
+                        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500" 
+                        alt="Workspace setup with laptop and code" 
+                        width="350"
+                        style="border-radius: 6px;"
+                    >
+                    <figcaption><em>Figure 1: Clean developer workspace setup.</em></figcaption>
+                </figure>
+
+                <p>
+                    Search engines love semantic HTML because it boosts SEO, and screen readers rely on it 
+                    for accessibility!
+                </p>
+            </article>
+
+        </section>
+
+        <!-- 6. ASIDE: Sidebar with secondary info -->
+        <aside style="flex: 1; background-color: #f1f3f5; padding: 15px; border-radius: 6px;">
+            <h3>About the Author</h3>
+            <p><strong>Sri Pallav</strong></p>
+            <p>Aspiring Full-Stack MERN Developer practicing HTML, CSS, JavaScript, and React.</p>
+        </aside>
+
+    </main>
+
+    <br>
+
+    <!-- 7. FOOTER: Bottom info, copyright & links -->
+    <footer style="background-color: #2b303a; color: white; padding: 10px; text-align: center; border-radius: 6px;">
+        <small>&copy; 2026 Sri Pallav. All rights reserved.</small>
+    </footer>
+
+</body>
+</html>
