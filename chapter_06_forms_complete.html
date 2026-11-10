@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 6 - Complete HTML Forms Guide</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 30px; background-color: #f9f9f9;">
+
+    <h1>Chapter 6: Complete HTML Forms &amp; Inputs Guide</h1>
+    <p>This is the exact structure used to send data to Node.js / Express &amp; MongoDB.</p>
+    <hr>
+
+    <form action="/api/register" method="POST" style="background: white; padding: 25px; border-radius: 8px; width: 450px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+
+        <!-- 1. FIELDSET: ACCOUNT DETAILS -->
+        <fieldset style="border: 1px solid #ccc; padding: 15px; border-radius: 5px; margin-bottom: 15px;">
+            <legend><strong>Account Credentials</strong></legend>
+
+            <!-- Text input -->
+            <div>
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="fullname" placeholder="Sri Pallav" required style="width: 100%; padding: 6px; margin-top: 4px;">
+            </div>
+            <br>
+
+            <!-- Email input -->
+            <div>
+                <label for="user-email">Email Address:</label><br>
+                <input type="email" id="user-email" name="email" placeholder="sri@example.com" required style="width: 100%; padding: 6px; margin-top: 4px;">
+            </div>
+            <br>
+
+            <!-- Password input -->
+            <div>
+                <label for="user-pass">Password:</label><br>
+                <input type="password" id="user-pass" name="password" placeholder="At least 8 characters" required style="width: 100%; padding: 6px; margin-top: 4px;">
+            </div>
+        </fieldset>
+
+        <!-- 2. FIELDSET: PROFILE & PREFERENCES -->
+        <fieldset style="border: 1px solid #ccc; padding: 15px; border-radius: 5px; margin-bottom: 15px;">
+            <legend><strong>Developer Profile</strong></legend>
+
+            <!-- Number input -->
+            <div>
+                <label for="age">Age:</label><br>
+                <input type="number" id="age" name="age" min="18" max="60" placeholder="18" style="padding: 6px;">
+            </div>
+            <br>
+
+            <!-- Date input -->
+            <div>
+                <label for="dob">Date of Birth:</label><br>
+                <input type="date" id="dob" name="dob" style="padding: 6px;">
+            </div>
+            <br>
+
+            <!-- Dropdown (<select>) -->
+            <div>
+                <label for="track">Preferred Track:</label><br>
+                <select id="track" name="track" style="padding: 6px; width: 100%;">
+                    <option value="mern">MERN Full-Stack Developer</option>
+                    <option value="frontend">React Frontend Developer</option>
+                    <option value="backend">Node.js Backend Developer</option>
+                </select>
+            </div>
+            <br>
+
+            <!-- Radio buttons (Single choice: notice same name="experience") -->
+            <div>
+                <p style="margin: 0 0 5px 0;"><strong>Experience Level:</strong></p>
+                <input type="radio" id="fresher" name="experience" value="fresher" checked>
+                <label for="fresher">Fresher</label>
+                &nbsp;&nbsp;
+                <input type="radio" id="experienced" name="experience" value="experienced">
+                <label for="experienced">Experienced</label>
+            </div>
+            <br>
+
+            <!-- Checkboxes (Multiple choices: notice different values) -->
+            <div>
+                <p style="margin: 0 0 5px 0;"><strong>Technologies you know:</strong></p>
+                <input type="checkbox" id="skill-html" name="skills" value="html" checked>
+                <label for="skill-html">HTML5</label>
+                &nbsp;
+                <input type="checkbox" id="skill-css" name="skills" value="css">
+                <label for="skill-css">CSS3</label>
+                &nbsp;
+                <input type="checkbox" id="skill-js" name="skills" value="javascript">
+                <label for="skill-js">JavaScript</label>
+            </div>
+            <br>
+
+            <!-- File Upload -->
+            <div>
+                <label for="resume">Upload Resume (PDF):</label><br>
+                <input type="file" id="resume" name="resume" accept=".pdf">
+            </div>
+            <br>
+
+            <!-- Textarea -->
+            <div>
+                <label for="bio">Career Objective / Bio:</label><br>
+                <textarea id="bio" name="bio" rows="3" placeholder="Tell us your goals..." style="width: 100%; padding: 6px;"></textarea>
+            </div>
+        </fieldset>
+
+        <!-- Submit & Reset Buttons -->
+        <button type="submit" style="background-color: #28a745; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px;">
+            Register as Developer
+        </button>
+        &nbsp;
+        <button type="reset" style="background-color: #dc3545; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer;">
+            Clear Form
+        </button>
+
+    </form>
+
+</body>
+</html>
