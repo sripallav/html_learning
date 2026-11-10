@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colspan vs Rowspan Visual</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 30px;">
+
+    <h1>Understanding Colspan vs Rowspan Visually</h1>
+    <hr>
+
+    <!-- 1. NORMAL TABLE (NO SPAN) -->
+    <h2>1. Normal 2x2 Grid (No Span)</h2>
+    <p>Every row has exactly 2 separate cells:</p>
+    <table border="1" cellpadding="15">
+        <tr>
+            <td style="background-color: #ffcccc;">Cell 1</td>
+            <td style="background-color: #ccffcc;">Cell 2</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ccccff;">Cell 3</td>
+            <td style="background-color: #ffffcc;">Cell 4</td>
+        </tr>
+    </table>
+
+    <br><hr>
+
+    <!-- 2. COLSPAN (HORIZONTAL MERGE) -->
+    <h2>2. With COLSPAN="2" (Horizontal Stretch &rarr;)</h2>
+    <p>Cell 3 and Cell 4 became ONE single wide cell stretching across 2 columns:</p>
+    <table border="1" cellpadding="15">
+        <tr>
+            <td style="background-color: #ffcccc;">Cell 1</td>
+            <td style="background-color: #ccffcc;">Cell 2</td>
+        </tr>
+        <tr>
+            <!-- colspan="2" combines both columns -->
+            <td colspan="2" style="background-color: #d4edda; text-align: center; font-weight: bold;">
+                I am ONE cell with colspan="2" (Stretching Left to Right)
+            </td>
+        </tr>
+    </table>
+
+    <br><hr>
+
+    <!-- 3. ROWSPAN (VERTICAL MERGE) -->
+    <h2>3. With ROWSPAN="2" (Vertical Stretch &darr;)</h2>
+    <p>Cell 1 stretched down across 2 rows, so the second row only needs ONE cell:</p>
+    <table border="1" cellpadding="15">
+        <tr>
+            <!-- rowspan="2" combines both rows vertically -->
+            <td rowspan="2" style="background-color: #fff3cd; font-weight: bold; text-align: center;">
+                I am ONE cell with rowspan="2"<br>(Stretching Top to Bottom)
+            </td>
+            <td style="background-color: #ccffcc;">Cell 2 (Row 1)</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ffffcc;">Cell 4 (Row 2)</td>
+        </tr>
+    </table>
+
+</body>
+</html>

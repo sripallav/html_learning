@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pillar 1 & 2 - Box Model Mastery</title>
+
+    <!-- INTERNAL CSS -->
+    <style>
+        /* 1. Universal Selector: Reset box-sizing */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f6f8;
+        }
+
+        /* 2. Class Selector */
+        .card {
+            background-color: white;
+            /* Box Model Properties: */
+            padding: 20px;            /* Inner space */
+            border: 2px solid #007bff;/* Frame */
+            margin-bottom: 20px;      /* Outer space below */
+            border-radius: 8px;       /* Rounded corners */
+            width: 320px;
+        }
+
+        .card-title {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .card-desc {
+            color: #555;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        /* Button Styling */
+        .btn {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* Hover effect (Pseudo-class) */
+        .btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Core: Selectors &amp; Box Model</h1>
+    <p style="margin: 10px 0 20px 0; color: #666;">Notice how clean the card looks with Padding, Border, and Margin!</p>
+
+    <!-- Card Component -->
+    <div class="card">
+        <h2 class="card-title">MERN Full-Stack</h2>
+        <p class="card-desc">Master HTML, CSS, JavaScript, React, Node.js, and MongoDB with focused practice.</p>
+        <button class="btn">Start Learning JS &rarr;</button>
+    </div>
+
+</body>
+</html>

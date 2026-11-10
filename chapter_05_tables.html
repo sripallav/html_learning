@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 5 - HTML Tables Guide</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 20px;">
+
+    <h1>Chapter 5: HTML Tables Complete Guide</h1>
+    <hr>
+
+    <!-- 1. BASIC TABLE -->
+    <h2>1. Basic Table (&lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;td&gt;)</h2>
+    <table border="1" cellpadding="8" style="border-collapse: collapse;">
+        <tr>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Location</th>
+        </tr>
+        <tr>
+            <td>Sri Pallav</td>
+            <td>Full-Stack Developer</td>
+            <td>India</td>
+        </tr>
+        <tr>
+            <td>Alex</td>
+            <td>Frontend Engineer</td>
+            <td>USA</td>
+        </tr>
+    </table>
+
+    <br><hr>
+
+    <!-- 2. SEMANTIC TABLE (thead, tbody, tfoot) -->
+    <h2>2. Semantic Table (&lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;)</h2>
+    <table border="1" cellpadding="8" style="border-collapse: collapse; width: 400px;">
+        <thead style="background-color: #f2f2f2;">
+            <tr>
+                <th>Course Item</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>HTML &amp; CSS Mastery</td>
+                <td>₹999</td>
+            </tr>
+            <tr>
+                <td>JavaScript ES6+</td>
+                <td>₹1,499</td>
+            </tr>
+            <tr>
+                <td>React &amp; Redux</td>
+                <td>₹1,999</td>
+            </tr>
+        </tbody>
+        <tfoot style="background-color: #e6f7ff; font-weight: bold;">
+            <tr>
+                <td>Total Cost</td>
+                <td>₹4,497</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <br><hr>
+
+    <!-- 3. CELL MERGING: COLSPAN -->
+    <h2>3. Merging Columns (&lt;td colspan="3"&gt;)</h2>
+    <p>Notice the bottom row spans across all 3 columns horizontally:</p>
+    
+    <table border="1" cellpadding="8" style="border-collapse: collapse; width: 450px;">
+        <tr style="background-color: #f0f0f0;">
+            <th>Day</th>
+            <th>Topic</th>
+            <th>Hours</th>
+        </tr>
+        <tr>
+            <td>Day 1</td>
+            <td>HTML5 Foundation</td>
+            <td>2 hrs</td>
+        </tr>
+        <tr>
+            <td>Day 2</td>
+            <td>CSS3 Styling</td>
+            <td>2 hrs</td>
+        </tr>
+        <!-- Merging 3 columns into 1 -->
+        <tr style="background-color: #d4edda; text-align: center; font-weight: bold;">
+            <td colspan="3">Total Study Time: 4 Hours (colspan="3")</td>
+        </tr>
+    </table>
+
+    <br><hr>
+
+    <!-- 4. CELL MERGING: ROWSPAN -->
+    <h2>4. Merging Rows (&lt;td rowspan="2"&gt;)</h2>
+    <p>Notice the "Sri Pallav" cell spans across 2 rows vertically:</p>
+
+    <table border="1" cellpadding="8" style="border-collapse: collapse;">
+        <tr style="background-color: #f0f0f0;">
+            <th>Student</th>
+            <th>Contact Type</th>
+            <th>Details</th>
+        </tr>
+        <tr>
+            <!-- This cell spans DOWN across 2 rows -->
+            <td rowspan="2" style="background-color: #fff3cd; font-weight: bold;">Sri Pallav</td>
+            <td>Email</td>
+            <td>sripallavyerram@gmail.com</td>
+        </tr>
+        <tr>
+            <!-- No student cell needed here because the cell above takes this space! -->
+            <td>Mobile</td>
+            <td>+91 98765 43210</td>
+        </tr>
+    </table>
+
+</body>
+</html>
