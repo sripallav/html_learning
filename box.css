@@ -1,0 +1,14 @@
+div {
+    background-color: lightblue;
+    border: 3px solid blue;
+    padding: 20px;   /* Notice how text gets space inside! */
+    margin: 30px;    /* Notice how the whole box moves away from the edges! */
+
+   
+}
+button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;  /* 10px top/bottom, 20px left/right */
+    margin: 15px;        /* Pushes other buttons 15px away! */
+}
